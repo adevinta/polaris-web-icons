@@ -1,5 +1,5 @@
 {
-  "name": "@spark-ui/icons",
+  "name": "@polaris/icons",
   "version": "1.21.4",
   "description": "spark-ui icons",
   "publishConfig": {
