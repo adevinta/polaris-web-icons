@@ -1,0 +1,147 @@
+name: quality
+on:
+  pull_request:
+    branches:
+      - main
+      - 'canary/**'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  assign-pr-owner:
+    runs-on: ubuntu-latest
+    name: PR assignment
+    steps:
+      - name: Assign PR
+        uses: toshimaru/auto-author-assign@v1.6.0
+        if: github.event_name == 'pull_request' && github.event.action == 'opened'
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+  lint:
+    runs-on: ubuntu-latest
+    name: Lint
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install
+        uses: ./.github/composite-actions/install
+
+      - name: Lint
+        run: npm run lint
+  typecheck:
+    runs-on: ubuntu-latest
+    name: Typecheck
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install
+        uses: ./.github/composite-actions/install
+
+      - name: Type checking
+        run: npm run typecheck
+  test:
+    runs-on: ubuntu-latest
+    name: Test
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install
+        uses: ./.github/composite-actions/install
+
+      - name: Test
+        run: npm run test:coverage
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+          files: ./dist/coverage/coverage.json
+  a11y:
+    runs-on: ubuntu-latest
+    name: Accessibility
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Get changed files
+        uses: tj-actions/changed-files@v36
+        id: files
+        with:
+          files: ./packages/components/**/*.{ts,tsx,mdx,json}
+
+      - name: Install
+        if: steps.files.outputs.all_changed_files_count > 0
+        uses: ./.github/composite-actions/install
+
+      - name: Build Project Artifacts
+        if: steps.files.outputs.all_changed_files_count > 0
+        run: npm run storybook:build
+
+      - name: Serve Storybook files
+        if: steps.files.outputs.all_changed_files_count > 0
+        uses: Eun/http-server-action@v1
+        with:
+          directory: ./dist
+          port: 6006
+
+      - name: Accessibility checking
+        if: steps.files.outputs.all_changed_files_count > 0
+        run: node bin/check-a11y.js -f ${{ steps.files.outputs.all_changed_files }}
+  visual-testing:
+    runs-on: ubuntu-latest
+    name: Visual testing
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Install
+        uses: ./.github/composite-actions/install
+
+      - name: Publish to Chromatic
+        uses: chromaui/action@v1
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          buildScriptName: 'storybook:build'
+          onlyChanged: true
+          untraced: 'packages/utils/\*\*"'
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy
+    environment:
+      name: ${{ github.event_name != 'pull_request' && 'Production' || 'Preview'}}
+      url: ${{ steps.deployment.outputs.url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Install
+        uses: ./.github/composite-actions/install
+
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest --no-save --no-fund --no-audit --no-scripts
+
+      - name: Build Storybook
+        run: npm run storybook:build
+
+      - name: Build tailwind config viewer
+        run: npm run tailwind-config-viewer:build
+
+      - name: Deploy Storybook to Vercel
+        id: deployment
+        run: |
+          DEPLOYMENT_URL=$(vercel deploy --token $VERCEL_TOKEN --yes)
+          echo "::set-output name=url::$(echo $DEPLOYMENT_URL)"
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+          VERCEL_TOKEN: ${{secrets.VERCEL_TOKEN}}

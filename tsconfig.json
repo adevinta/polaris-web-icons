@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.build.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "composite": false,
+    "downlevelIteration": true,
+    "emitDeclarationOnly": false,
+    "noEmit": true,
+    "paths": {
+      "@docs/*": ["documentation/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

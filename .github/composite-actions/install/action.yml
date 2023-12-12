@@ -1,0 +1,16 @@
+name: 'Install'
+description: 'Sets up Node.js and runs install'
+runs:
+  using: composite
+  steps:
+    - name: Node setup
+      uses: actions/setup-node@v3
+      with:
+        node-version-file: '.nvmrc'
+        cache: 'npm'
+
+    - name: Install dependencies
+      shell: bash
+      run: |
+        echo 'Dependencies cache miss'
+        npm ci --prefer-offline --no-audit

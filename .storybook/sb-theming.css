@@ -1,0 +1,9 @@
+/* Enabled dark mode preview inside Canvas blocks */
+.docs-story:first-child {
+    @apply !bg-background;
+}
+
+[data-spark-component="tabs"] table.docblock-argstable {
+    margin-top: 0;
+    margin-bottom: 0;
+}

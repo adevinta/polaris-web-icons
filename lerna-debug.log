@@ -1,0 +1,412 @@
+0 silly argv {
+0 silly argv   _: [ 'version' ],
+0 silly argv   exact: true,
+0 silly argv   lernaVersion: '7.1.4',
+0 silly argv   '$0': '/Users/andres.lucas/Code/adevinta/spark/node_modules/.bin/lerna',
+0 silly argv   bump: 'patch'
+0 silly argv }
+1 notice cli v7.1.4
+2 verbose packageConfigs Resolving packages based on package.json "workspaces" configuration.
+3 verbose rootPath /Users/andres.lucas/Code/adevinta/spark
+4 info versioning independent
+5 silly isAnythingCommitted
+6 verbose isAnythingCommitted 1
+7 silly getCurrentBranch
+8 verbose currentBranch main
+9 silly remoteBranchExists
+10 silly isBehindUpstream
+11 silly isBehindUpstream main is behind origin/main by 0 commit(s) and ahead by 0
+12 silly hasTags
+13 verbose hasTags true
+14 silly git-describe.sync "@spark-ui/alert-dialog@0.1.2-3-g11e0f201" => {"lastTagName":"@spark-ui/alert-dialog@0.1.2","lastVersion":"0.1.2","refCount":"3","sha":"11e0f201","isDirty":false}
+15 info Looking for changed packages since @spark-ui/alert-dialog@0.1.2
+16 info ignoring diff in paths matching [ '**/CHANGELOG.md', '**/node_modules/**', '**/*.md' ]
+17 silly checking diff packages/components/alert-dialog
+18 silly no diff found in @spark-ui/alert-dialog
+19 silly checking diff packages/components/badge
+20 silly found diff in packages/components/badge/package.json
+20 silly found diff in packages/components/badge/src/Badge.stories.tsx
+20 silly found diff in packages/components/badge/src/BadgeItem.styles.tsx
+21 verbose filtered diff [
+21 verbose filtered diff   'packages/components/badge/package.json',
+21 verbose filtered diff   'packages/components/badge/src/Badge.stories.tsx',
+21 verbose filtered diff   'packages/components/badge/src/BadgeItem.styles.tsx'
+21 verbose filtered diff ]
+22 silly checking diff packages/components/button
+23 silly found diff in packages/components/button/package.json
+23 silly found diff in packages/components/button/src/Button.stories.tsx
+23 silly found diff in packages/components/button/src/Button.styles.tsx
+23 silly found diff in packages/components/button/src/Button.tsx
+23 silly found diff in packages/components/button/src/variants/contrast.ts
+23 silly found diff in packages/components/button/src/variants/filled.ts
+23 silly found diff in packages/components/button/src/variants/ghost.ts
+23 silly found diff in packages/components/button/src/variants/outlined.ts
+23 silly found diff in packages/components/button/src/variants/tinted.ts
+24 verbose filtered diff [
+24 verbose filtered diff   'packages/components/button/package.json',
+24 verbose filtered diff   'packages/components/button/src/Button.stories.tsx',
+24 verbose filtered diff   'packages/components/button/src/Button.styles.tsx',
+24 verbose filtered diff   'packages/components/button/src/Button.tsx',
+24 verbose filtered diff   'packages/components/button/src/variants/contrast.ts',
+24 verbose filtered diff   'packages/components/button/src/variants/filled.ts',
+24 verbose filtered diff   'packages/components/button/src/variants/ghost.ts',
+24 verbose filtered diff   'packages/components/button/src/variants/outlined.ts',
+24 verbose filtered diff   'packages/components/button/src/variants/tinted.ts'
+24 verbose filtered diff ]
+25 silly checking diff packages/components/checkbox
+26 silly found diff in packages/components/checkbox/package.json
+26 silly found diff in packages/components/checkbox/src/Checkbox.stories.tsx
+26 silly found diff in packages/components/checkbox/src/CheckboxInput.styles.ts
+27 verbose filtered diff [
+27 verbose filtered diff   'packages/components/checkbox/package.json',
+27 verbose filtered diff   'packages/components/checkbox/src/Checkbox.stories.tsx',
+27 verbose filtered diff   'packages/components/checkbox/src/CheckboxInput.styles.ts'
+27 verbose filtered diff ]
+28 silly checking diff packages/components/dialog
+29 silly found diff in packages/components/dialog/package.json
+30 verbose filtered diff [ 'packages/components/dialog/package.json' ]
+31 silly checking diff packages/components/form-field
+32 silly found diff in packages/components/form-field/package.json
+33 verbose filtered diff [ 'packages/components/form-field/package.json' ]
+34 silly checking diff packages/components/icon
+35 silly found diff in packages/components/icon/package.json
+35 silly found diff in packages/components/icon/src/Icon.doc.mdx
+35 silly found diff in packages/components/icon/src/Icon.stories.tsx
+35 silly found diff in packages/components/icon/src/Icon.styles.tsx
+36 verbose filtered diff [
+36 verbose filtered diff   'packages/components/icon/package.json',
+36 verbose filtered diff   'packages/components/icon/src/Icon.doc.mdx',
+36 verbose filtered diff   'packages/components/icon/src/Icon.stories.tsx',
+36 verbose filtered diff   'packages/components/icon/src/Icon.styles.tsx'
+36 verbose filtered diff ]
+37 silly checking diff packages/components/icon-button
+38 silly found diff in packages/components/icon-button/package.json
+38 silly found diff in packages/components/icon-button/src/IconButton.stories.tsx
+38 silly found diff in packages/components/icon-button/src/IconButton.tsx
+39 verbose filtered diff [
+39 verbose filtered diff   'packages/components/icon-button/package.json',
+39 verbose filtered diff   'packages/components/icon-button/src/IconButton.stories.tsx',
+39 verbose filtered diff   'packages/components/icon-button/src/IconButton.tsx'
+39 verbose filtered diff ]
+40 silly checking diff packages/components/icons
+41 silly no diff found in @spark-ui/icons
+42 silly checking diff packages/components/input
+43 silly found diff in packages/components/input/package.json
+43 silly found diff in packages/components/input/src/Input.stories.tsx
+44 verbose filtered diff [
+44 verbose filtered diff   'packages/components/input/package.json',
+44 verbose filtered diff   'packages/components/input/src/Input.stories.tsx'
+44 verbose filtered diff ]
+45 silly checking diff packages/components/kbd
+46 silly found diff in packages/components/kbd/package.json
+47 verbose filtered diff [ 'packages/components/kbd/package.json' ]
+48 silly checking diff packages/components/label
+49 silly found diff in packages/components/label/package.json
+49 silly found diff in packages/components/label/src/Label.stories.tsx
+50 verbose filtered diff [
+50 verbose filtered diff   'packages/components/label/package.json',
+50 verbose filtered diff   'packages/components/label/src/Label.stories.tsx'
+50 verbose filtered diff ]
+51 silly checking diff packages/components/popover
+52 silly found diff in packages/components/popover/package.json
+52 silly found diff in packages/components/popover/src/Popover.stories.tsx
+53 verbose filtered diff [
+53 verbose filtered diff   'packages/components/popover/package.json',
+53 verbose filtered diff   'packages/components/popover/src/Popover.stories.tsx'
+53 verbose filtered diff ]
+54 silly checking diff packages/components/portal
+55 silly found diff in packages/components/portal/package.json
+55 silly found diff in packages/components/portal/src/Portal.stories.tsx
+56 verbose filtered diff [
+56 verbose filtered diff   'packages/components/portal/package.json',
+56 verbose filtered diff   'packages/components/portal/src/Portal.stories.tsx'
+56 verbose filtered diff ]
+57 silly checking diff packages/components/radio-group
+58 silly found diff in packages/components/radio-group/package.json
+58 silly found diff in packages/components/radio-group/src/RadioGroup.stories.tsx
+58 silly found diff in packages/components/radio-group/src/RadioIndicator.styles.ts
+58 silly found diff in packages/components/radio-group/src/RadioInput.styles.ts
+59 verbose filtered diff [
+59 verbose filtered diff   'packages/components/radio-group/package.json',
+59 verbose filtered diff   'packages/components/radio-group/src/RadioGroup.stories.tsx',
+59 verbose filtered diff   'packages/components/radio-group/src/RadioIndicator.styles.ts',
+59 verbose filtered diff   'packages/components/radio-group/src/RadioInput.styles.ts'
+59 verbose filtered diff ]
+60 silly checking diff packages/components/slot
+61 silly no diff found in @spark-ui/slot
+62 silly checking diff packages/components/spinner
+63 silly found diff in packages/components/spinner/package.json
+63 silly found diff in packages/components/spinner/src/Spinner.stories.tsx
+63 silly found diff in packages/components/spinner/src/Spinner.styles.tsx
+64 verbose filtered diff [
+64 verbose filtered diff   'packages/components/spinner/package.json',
+64 verbose filtered diff   'packages/components/spinner/src/Spinner.stories.tsx',
+64 verbose filtered diff   'packages/components/spinner/src/Spinner.styles.tsx'
+64 verbose filtered diff ]
+65 silly checking diff packages/components/switch
+66 silly found diff in packages/components/switch/package.json
+66 silly found diff in packages/components/switch/src/Switch.stories.tsx
+66 silly found diff in packages/components/switch/src/SwitchInput.styles.ts
+67 verbose filtered diff [
+67 verbose filtered diff   'packages/components/switch/package.json',
+67 verbose filtered diff   'packages/components/switch/src/Switch.stories.tsx',
+67 verbose filtered diff   'packages/components/switch/src/SwitchInput.styles.ts'
+67 verbose filtered diff ]
+68 silly checking diff packages/components/tabs
+69 silly found diff in packages/components/tabs/package.json
+69 silly found diff in packages/components/tabs/src/Tabs.stories.tsx
+69 silly found diff in packages/components/tabs/src/TabsRoot.tsx
+69 silly found diff in packages/components/tabs/src/TabsTrigger.styles.ts
+70 verbose filtered diff [
+70 verbose filtered diff   'packages/components/tabs/package.json',
+70 verbose filtered diff   'packages/components/tabs/src/Tabs.stories.tsx',
+70 verbose filtered diff   'packages/components/tabs/src/TabsRoot.tsx',
+70 verbose filtered diff   'packages/components/tabs/src/TabsTrigger.styles.ts'
+70 verbose filtered diff ]
+71 silly checking diff packages/components/tag
+72 silly found diff in packages/components/tag/package.json
+72 silly found diff in packages/components/tag/src/Tag.stories.tsx
+72 silly found diff in packages/components/tag/src/Tag.styles.tsx
+72 silly found diff in packages/components/tag/src/Tag.tsx
+72 silly found diff in packages/components/tag/src/variants/filled.ts
+72 silly found diff in packages/components/tag/src/variants/outlined.ts
+72 silly found diff in packages/components/tag/src/variants/tinted.ts
+73 verbose filtered diff [
+73 verbose filtered diff   'packages/components/tag/package.json',
+73 verbose filtered diff   'packages/components/tag/src/Tag.stories.tsx',
+73 verbose filtered diff   'packages/components/tag/src/Tag.styles.tsx',
+73 verbose filtered diff   'packages/components/tag/src/Tag.tsx',
+73 verbose filtered diff   'packages/components/tag/src/variants/filled.ts',
+73 verbose filtered diff   'packages/components/tag/src/variants/outlined.ts',
+73 verbose filtered diff   'packages/components/tag/src/variants/tinted.ts'
+73 verbose filtered diff ]
+74 silly checking diff packages/components/textarea
+75 silly found diff in packages/components/textarea/package.json
+76 verbose filtered diff [ 'packages/components/textarea/package.json' ]
+77 silly checking diff packages/components/visually-hidden
+78 silly no diff found in @spark-ui/visually-hidden
+79 silly checking diff packages/hooks/use-combined-state
+80 silly no diff found in @spark-ui/use-combined-state
+81 silly checking diff packages/hooks/use-merge-refs
+82 silly no diff found in @spark-ui/use-merge-refs
+83 silly checking diff packages/hooks/use-mounted-state
+84 silly no diff found in @spark-ui/use-mounted-state
+85 silly checking diff packages/utils/cli
+86 silly no diff found in @spark-ui/cli-utils
+87 silly checking diff packages/utils/internal-utils
+88 silly found diff in packages/utils/internal-utils/package.json
+88 silly found diff in packages/utils/internal-utils/src/tw/index.ts
+88 silly found diff in packages/utils/internal-utils/src/variants/constants.ts
+89 verbose filtered diff [
+89 verbose filtered diff   'packages/utils/internal-utils/package.json',
+89 verbose filtered diff   'packages/utils/internal-utils/src/tw/index.ts',
+89 verbose filtered diff   'packages/utils/internal-utils/src/variants/constants.ts'
+89 verbose filtered diff ]
+90 silly checking diff packages/utils/tailwind-plugins
+91 silly found diff in packages/utils/tailwind-plugins/package.json
+91 silly found diff in packages/utils/tailwind-plugins/spark-theme/index.doc.mdx
+92 verbose filtered diff [
+92 verbose filtered diff   'packages/utils/tailwind-plugins/package.json',
+92 verbose filtered diff   'packages/utils/tailwind-plugins/spark-theme/index.doc.mdx'
+92 verbose filtered diff ]
+93 silly checking diff packages/utils/theme
+94 silly found diff in packages/utils/theme/package.json
+94 silly found diff in packages/utils/theme/src/defaultTheme.ts
+94 silly found diff in packages/utils/theme/src/defaultThemeDark.ts
+94 silly found diff in packages/utils/theme/src/types.ts
+95 verbose filtered diff [
+95 verbose filtered diff   'packages/utils/theme/package.json',
+95 verbose filtered diff   'packages/utils/theme/src/defaultTheme.ts',
+95 verbose filtered diff   'packages/utils/theme/src/defaultThemeDark.ts',
+95 verbose filtered diff   'packages/utils/theme/src/types.ts'
+95 verbose filtered diff ]
+96 verbose updated @spark-ui/alert-dialog
+97 verbose updated @spark-ui/badge
+98 verbose updated @spark-ui/button
+99 verbose updated @spark-ui/checkbox
+100 verbose updated @spark-ui/dialog
+101 verbose updated @spark-ui/form-field
+102 verbose updated @spark-ui/icon
+103 verbose updated @spark-ui/icon-button
+104 verbose updated @spark-ui/input
+105 verbose updated @spark-ui/kbd
+106 verbose updated @spark-ui/label
+107 verbose updated @spark-ui/popover
+108 verbose updated @spark-ui/portal
+109 verbose updated @spark-ui/radio-group
+110 verbose updated @spark-ui/spinner
+111 verbose updated @spark-ui/switch
+112 verbose updated @spark-ui/tabs
+113 verbose updated @spark-ui/tag
+114 verbose updated @spark-ui/textarea
+115 verbose updated @spark-ui/internal-utils
+116 verbose updated @spark-ui/tailwind-plugins
+117 verbose updated @spark-ui/theme-utils
+118 verbose git-describe undefined => "@spark-ui/alert-dialog@0.1.2-3-g11e0f201"
+119 silly git-describe parsed => {"lastTagName":"@spark-ui/alert-dialog@0.1.2","lastVersion":"0.1.2","refCount":"3","sha":"11e0f201","isDirty":false}
+120 info execute Skipping releases
+121 silly lifecycle No script for "preversion" in "spark", continuing
+122 silly lifecycle No script for "preversion" in "@spark-ui/kbd", continuing
+123 silly lifecycle No script for "preversion" in "@spark-ui/label", continuing
+124 silly lifecycle No script for "preversion" in "@spark-ui/portal", continuing
+125 silly lifecycle No script for "preversion" in "@spark-ui/internal-utils", continuing
+126 silly lifecycle No script for "preversion" in "@spark-ui/theme-utils", continuing
+127 verbose version @spark-ui/kbd has no lockfile. Skipping lockfile update.
+128 verbose version @spark-ui/label has no lockfile. Skipping lockfile update.
+129 verbose version @spark-ui/internal-utils has no lockfile. Skipping lockfile update.
+130 verbose version @spark-ui/portal has no lockfile. Skipping lockfile update.
+131 verbose version @spark-ui/theme-utils has no lockfile. Skipping lockfile update.
+132 silly lifecycle No script for "version" in "@spark-ui/kbd", continuing
+133 silly independent for @spark-ui/kbd at /Users/andres.lucas/Code/adevinta/spark/packages/components/kbd
+134 verbose getChangelogConfig using preset "conventional-changelog-angular"
+135 silly npa Result {
+135 silly npa   type: 'tag',
+135 silly npa   registry: true,
+135 silly npa   where: undefined,
+135 silly npa   raw: 'conventional-changelog-angular',
+135 silly npa   name: 'conventional-changelog-angular',
+135 silly npa   escapedName: 'conventional-changelog-angular',
+135 silly npa   scope: undefined,
+135 silly npa   rawSpec: '',
+135 silly npa   saveSpec: null,
+135 silly npa   fetchSpec: 'latest',
+135 silly npa   gitRange: undefined,
+135 silly npa   gitCommittish: undefined,
+135 silly npa   hosted: undefined
+135 silly npa }
+136 verbose getChangelogConfig Attempting to resolve preset "conventional-changelog-angular"
+137 info getChangelogConfig Successfully resolved preset "conventional-changelog-angular"
+138 silly lifecycle No script for "version" in "@spark-ui/label", continuing
+139 silly independent for @spark-ui/label at /Users/andres.lucas/Code/adevinta/spark/packages/components/label
+140 silly lifecycle No script for "version" in "@spark-ui/internal-utils", continuing
+141 silly independent for @spark-ui/internal-utils at /Users/andres.lucas/Code/adevinta/spark/packages/utils/internal-utils
+142 silly lifecycle No script for "version" in "@spark-ui/portal", continuing
+143 silly independent for @spark-ui/portal at /Users/andres.lucas/Code/adevinta/spark/packages/components/portal
+144 silly lifecycle No script for "version" in "@spark-ui/theme-utils", continuing
+145 silly independent for @spark-ui/theme-utils at /Users/andres.lucas/Code/adevinta/spark/packages/utils/theme
+146 silly independent writing new entry: "## [1.5.1](https://github.com/adevinta/spark/compare/@spark-ui/label@1.5.0...@spark-ui/label@1.5.1) (2023-08-03)\n\n\n### Features\n\n* **label:** dependencies review ([9d0bc62](https://github.com/adevinta/spark/commit/9d0bc629eb1e0cf6ec1c378163442a862e507037))\n\n\n\n"
+147 silly independent writing new entry: "## [1.2.8](https://github.com/adevinta/spark/compare/@spark-ui/portal@1.2.7...@spark-ui/portal@1.2.8) (2023-08-03)\n\n\n### Features\n\n* **portal:** dependencies review ([7ec344a](https://github.com/adevinta/spark/commit/7ec344a06a5379321dbceeb03aa9bcb3fcc0498f))\n\n\n\n"
+148 silly independent writing new entry: "## [3.0.1](https://github.com/adevinta/spark/compare/@spark-ui/theme-utils@2.18.0...@spark-ui/theme-utils@3.0.1) (2023-08-03)\n\n\n### Bug Fixes\n\n* **theme-utils:** biump ([9728c8a](https://github.com/adevinta/spark/commit/9728c8a7f5ded44281080a697be34b4a61a72c75))\n* **theme-utils:** bump ([51fa000](https://github.com/adevinta/spark/commit/51fa000d16fd0aab37163fe7dbe213bb29d11986))\n* **theme-utils:** color mainContainer ([c92144a](https://github.com/adevinta/spark/commit/c92144a3f40a196b2952265e937c3b9bb2a8a137))\n* **theme-utils:** fix mainContainer dark value ([dd5c408](https://github.com/adevinta/spark/commit/dd5c4080e12643599c2b7f469bd997e3c2c4a6d9))\n\n\n### Features\n\n* **theme-utils:** bump theme-utils version to colours tag ([89387dd](https://github.com/adevinta/spark/commit/89387dd7e77e00505ce2f2ae9abbb2297cb77cd2))\n* **theme-utils:** change suport color and addd basic state colours ([ab90588](https://github.com/adevinta/spark/commit/ab90588bd8e361a90911688b647d40ec95f33003))\n* **theme-utils:** remove disabled related tokens ([1699382](https://github.com/adevinta/spark/commit/1699382a28dd1b78439766bd6673cb4f5d5c9ff2))\n* **theme-utils:** rename \"primary\" to \"main\" & \"secondary\" to \"support\" in our theme color palette ([b16ef91](https://github.com/adevinta/spark/commit/b16ef911b7fe92be2ad188a2cdc99aa2b91dc0e9))\n\n\n\n"
+149 verbose independent wrote /Users/andres.lucas/Code/adevinta/spark/packages/components/label/CHANGELOG.md
+150 silly lifecycle No script for "preversion" in "@spark-ui/form-field", continuing
+151 verbose independent wrote /Users/andres.lucas/Code/adevinta/spark/packages/components/portal/CHANGELOG.md
+152 silly independent writing new entry: "## [2.0.1](https://github.com/adevinta/spark/compare/@spark-ui/internal-utils@1.6.1...@spark-ui/internal-utils@2.0.1) (2023-08-03)\n\n\n### Features\n\n* **internal-utils:** add basic and accent as available intent values ([2e38632](https://github.com/adevinta/spark/commit/2e3863247c8a6eedd723ad30af623a7d1a8c2f7a))\n* **internal-utils:** replace \"primary\", \"secondary\" intents with \"main\" & \"support\" ([b737a14](https://github.com/adevinta/spark/commit/b737a143c595e033a3b52b0f1b9a1eac496bf6bd))\n\n\n\n"
+153 silly independent writing new entry: "## [1.1.2](https://github.com/adevinta/spark/compare/@spark-ui/kbd@1.1.1...@spark-ui/kbd@1.1.2) (2023-08-03)\n\n\n### Features\n\n* **kbd:** dependencies review ([923a927](https://github.com/adevinta/spark/commit/923a92701ef88d332483b663dc38136413155c78))\n\n\n\n"
+154 verbose independent wrote /Users/andres.lucas/Code/adevinta/spark/packages/utils/theme/CHANGELOG.md
+155 silly lifecycle No script for "preversion" in "@spark-ui/tailwind-plugins", continuing
+156 verbose independent wrote /Users/andres.lucas/Code/adevinta/spark/packages/utils/internal-utils/CHANGELOG.md
+157 silly lifecycle No script for "preversion" in "@spark-ui/badge", continuing
+158 silly lifecycle No script for "preversion" in "@spark-ui/icon", continuing
+159 silly lifecycle No script for "preversion" in "@spark-ui/spinner", continuing
+160 silly lifecycle No script for "preversion" in "@spark-ui/tag", continuing
+161 verbose independent wrote /Users/andres.lucas/Code/adevinta/spark/packages/components/kbd/CHANGELOG.md
+162 verbose version @spark-ui/form-field has no lockfile. Skipping lockfile update.
+163 verbose version @spark-ui/tailwind-plugins has no lockfile. Skipping lockfile update.
+164 verbose version @spark-ui/icon has no lockfile. Skipping lockfile update.
+165 verbose version @spark-ui/badge has no lockfile. Skipping lockfile update.
+166 verbose version @spark-ui/spinner has no lockfile. Skipping lockfile update.
+167 verbose version @spark-ui/tag has no lockfile. Skipping lockfile update.
+168 silly lifecycle No script for "version" in "@spark-ui/form-field", continuing
+169 silly independent for @spark-ui/form-field at /Users/andres.lucas/Code/adevinta/spark/packages/components/form-field
+170 silly lifecycle No script for "version" in "@spark-ui/tag", continuing
+171 silly independent for @spark-ui/tag at /Users/andres.lucas/Code/adevinta/spark/packages/components/tag
+172 silly lifecycle No script for "version" in "@spark-ui/badge", continuing
+173 silly independent for @spark-ui/badge at /Users/andres.lucas/Code/adevinta/spark/packages/components/badge
+174 silly lifecycle No script for "version" in "@spark-ui/icon", continuing
+175 silly independent for @spark-ui/icon at /Users/andres.lucas/Code/adevinta/spark/packages/components/icon
+176 silly lifecycle No script for "version" in "@spark-ui/tailwind-plugins", continuing
+177 silly independent for @spark-ui/tailwind-plugins at /Users/andres.lucas/Code/adevinta/spark/packages/utils/tailwind-plugins
+178 silly lifecycle No script for "version" in "@spark-ui/spinner", continuing
+179 silly independent for @spark-ui/spinner at /Users/andres.lucas/Code/adevinta/spark/packages/components/spinner
+180 silly independent writing new entry: "## [1.2.2](https://github.com/adevinta/spark/compare/@spark-ui/form-field@1.2.1...@spark-ui/form-field@1.2.2) (2023-08-03)\n\n\n### Features\n\n* **form-field:** dependencies review ([fff8245](https://github.com/adevinta/spark/commit/fff82456910084877febfdba9aaedf24babd357a))\n\n\n\n"
+181 silly independent writing new entry: "## [2.0.1](https://github.com/adevinta/spark/compare/@spark-ui/tag@1.7.0...@spark-ui/tag@2.0.1) (2023-08-03)\n\n\n### Features\n\n* **tag:** apply new colours strategy ([9817b81](https://github.com/adevinta/spark/commit/9817b81ec47335e15f395adfffa65030d4bbada7))\n\n\n### BREAKING CHANGES\n\n* **tag:** apply new colours strategy\n\n\n\n"
+182 verbose independent wrote /Users/andres.lucas/Code/adevinta/spark/packages/components/form-field/CHANGELOG.md
+183 silly lifecycle No script for "preversion" in "@spark-ui/radio-group", continuing
+184 silly lifecycle No script for "preversion" in "@spark-ui/switch", continuing
+185 verbose independent wrote /Users/andres.lucas/Code/adevinta/spark/packages/components/tag/CHANGELOG.md
+186 silly independent writing new entry: "## [2.0.1](https://github.com/adevinta/spark/compare/@spark-ui/icon@1.8.0...@spark-ui/icon@2.0.1) (2023-08-03)\n\n\n### Features\n\n* **icon:** apply new colours strategy ([3d10331](https://github.com/adevinta/spark/commit/3d103317f7a73c7610afae338e42c49067186f29))\n\n\n### BREAKING CHANGES\n\n* **icon:** added main support accent and basic colours\n\n\n\n"
+187 verbose version @spark-ui/radio-group has no lockfile. Skipping lockfile update.
+188 verbose version @spark-ui/switch has no lockfile. Skipping lockfile update.
+189 verbose independent wrote /Users/andres.lucas/Code/adevinta/spark/packages/components/icon/CHANGELOG.md
+190 silly lifecycle No script for "preversion" in "@spark-ui/checkbox", continuing
+191 silly lifecycle No script for "preversion" in "@spark-ui/input", continuing
+192 verbose version @spark-ui/checkbox has no lockfile. Skipping lockfile update.
+193 verbose version @spark-ui/input has no lockfile. Skipping lockfile update.
+194 silly independent writing new entry: "## [2.0.1](https://github.com/adevinta/spark/compare/@spark-ui/badge@1.1.0...@spark-ui/badge@2.0.1) (2023-08-03)\n\n\n### Features\n\n* **badge:** update colors strategy ([e9330b8](https://github.com/adevinta/spark/commit/e9330b81588a2e0fe602fcd3cf3cbf0b1254f550))\n\n\n### BREAKING CHANGES\n\n* **badge:** add main support accent and basic\n\n\n\n"
+195 silly lifecycle No script for "version" in "@spark-ui/switch", continuing
+196 silly independent for @spark-ui/switch at /Users/andres.lucas/Code/adevinta/spark/packages/components/switch
+197 silly lifecycle No script for "version" in "@spark-ui/radio-group", continuing
+198 silly independent for @spark-ui/radio-group at /Users/andres.lucas/Code/adevinta/spark/packages/components/radio-group
+199 silly lifecycle No script for "version" in "@spark-ui/checkbox", continuing
+200 silly independent for @spark-ui/checkbox at /Users/andres.lucas/Code/adevinta/spark/packages/components/checkbox
+201 verbose independent wrote /Users/andres.lucas/Code/adevinta/spark/packages/components/badge/CHANGELOG.md
+202 silly lifecycle No script for "version" in "@spark-ui/input", continuing
+203 silly independent for @spark-ui/input at /Users/andres.lucas/Code/adevinta/spark/packages/components/input
+204 silly independent writing new entry: "## [3.0.1](https://github.com/adevinta/spark/compare/@spark-ui/tailwind-plugins@2.14.3...@spark-ui/tailwind-plugins@3.0.1) (2023-08-03)\n\n\n### Features\n\n* **tailwind-plugins:** bump @spark-ui/tailwind-plugins to [@colours](https://github.com/colours) tag ([11ef03c](https://github.com/adevinta/spark/commit/11ef03c792e2dee188ca7abbb5735fdba7d2f72f))\n\n\n\n"
+205 verbose independent wrote /Users/andres.lucas/Code/adevinta/spark/packages/utils/tailwind-plugins/CHANGELOG.md
+206 silly independent writing new entry: "## [2.0.1](https://github.com/adevinta/spark/compare/@spark-ui/spinner@1.1.0...@spark-ui/spinner@2.0.1) (2023-08-03)\n\n\n### Features\n\n* **spinner:** apply new colours strategy ([849e48c](https://github.com/adevinta/spark/commit/849e48c71daf2507928d2f00bb0525cb4c5f363c))\n\n\n### BREAKING CHANGES\n\n* **spinner:** new colours strategy\n\n\n\n"
+207 verbose independent wrote /Users/andres.lucas/Code/adevinta/spark/packages/components/spinner/CHANGELOG.md
+208 silly lifecycle No script for "preversion" in "@spark-ui/button", continuing
+209 verbose version @spark-ui/button has no lockfile. Skipping lockfile update.
+210 silly independent writing new entry: "## [2.0.1](https://github.com/adevinta/spark/compare/@spark-ui/radio-group@1.5.2...@spark-ui/radio-group@2.0.1) (2023-08-03)\n\n\n### Features\n\n* **radio-group:** new colours strategy ([db4c2cf](https://github.com/adevinta/spark/commit/db4c2cf30f4a07bf420feaca38205bd05ab5d446))\n\n\n### BREAKING CHANGES\n\n* **radio-group:** new colours strategy\n\n\n\n"
+211 silly independent writing new entry: "## [2.0.1](https://github.com/adevinta/spark/compare/@spark-ui/checkbox@1.19.5...@spark-ui/checkbox@2.0.1) (2023-08-03)\n\n\n### Features\n\n* **checkbox:** apply new colours strategy ([4206f39](https://github.com/adevinta/spark/commit/4206f39daeb0b057923c5ab0f569f478d939b9c9))\n\n\n### BREAKING CHANGES\n\n* **checkbox:** apply new colours strategy\n\n\n\n"
+212 verbose independent wrote /Users/andres.lucas/Code/adevinta/spark/packages/components/radio-group/CHANGELOG.md
+213 verbose independent wrote /Users/andres.lucas/Code/adevinta/spark/packages/components/checkbox/CHANGELOG.md
+214 silly lifecycle No script for "version" in "@spark-ui/button", continuing
+215 silly independent for @spark-ui/button at /Users/andres.lucas/Code/adevinta/spark/packages/components/button
+216 silly independent writing new entry: "## [2.0.1](https://github.com/adevinta/spark/compare/@spark-ui/switch@1.14.4...@spark-ui/switch@2.0.1) (2023-08-03)\n\n\n### Features\n\n* **switch:** add new colours strategy ([7013e7f](https://github.com/adevinta/spark/commit/7013e7fd5aa2d6fefa4a41b92121fb846cd4aaff))\n\n\n### BREAKING CHANGES\n\n* **switch:** new colours strategy\n\n\n\n"
+217 verbose independent wrote /Users/andres.lucas/Code/adevinta/spark/packages/components/switch/CHANGELOG.md
+218 silly independent writing new entry: "## [1.3.6](https://github.com/adevinta/spark/compare/@spark-ui/input@1.3.5...@spark-ui/input@1.3.6) (2023-08-03)\n\n\n### Features\n\n* **input:** dependencies review ([5bc0810](https://github.com/adevinta/spark/commit/5bc0810f17b4834ae7db5dc871c297d8589c7544))\n\n\n\n"
+219 verbose independent wrote /Users/andres.lucas/Code/adevinta/spark/packages/components/input/CHANGELOG.md
+220 silly lifecycle No script for "preversion" in "@spark-ui/textarea", continuing
+221 verbose version @spark-ui/textarea has no lockfile. Skipping lockfile update.
+222 silly lifecycle No script for "version" in "@spark-ui/textarea", continuing
+223 silly independent for @spark-ui/textarea at /Users/andres.lucas/Code/adevinta/spark/packages/components/textarea
+224 silly independent writing new entry: "## [2.0.1](https://github.com/adevinta/spark/compare/@spark-ui/button@1.15.0...@spark-ui/button@2.0.1) (2023-08-03)\n\n\n### Features\n\n* **button:** add spinner colour dependancy ([e6890e3](https://github.com/adevinta/spark/commit/e6890e391295175caeca2b4d7440a005821ec686))\n* **button:** update new colors strategy ([c53d5e9](https://github.com/adevinta/spark/commit/c53d5e96a687f068d4190fb5e30781924674e374))\n\n\n### BREAKING CHANGES\n\n* **button:** new colors strategy\n\n\n\n"
+225 verbose independent wrote /Users/andres.lucas/Code/adevinta/spark/packages/components/button/CHANGELOG.md
+226 silly lifecycle No script for "preversion" in "@spark-ui/icon-button", continuing
+227 silly lifecycle No script for "preversion" in "@spark-ui/tabs", continuing
+228 verbose version @spark-ui/icon-button has no lockfile. Skipping lockfile update.
+229 verbose version @spark-ui/tabs has no lockfile. Skipping lockfile update.
+230 silly lifecycle No script for "version" in "@spark-ui/icon-button", continuing
+231 silly independent for @spark-ui/icon-button at /Users/andres.lucas/Code/adevinta/spark/packages/components/icon-button
+232 silly lifecycle No script for "version" in "@spark-ui/tabs", continuing
+233 silly independent for @spark-ui/tabs at /Users/andres.lucas/Code/adevinta/spark/packages/components/tabs
+234 silly independent writing new entry: "## [1.2.3](https://github.com/adevinta/spark/compare/@spark-ui/textarea@1.2.2...@spark-ui/textarea@1.2.3) (2023-08-03)\n\n\n### Features\n\n* **textarea:** review dependencies ([1e888d4](https://github.com/adevinta/spark/commit/1e888d40eec5edb9efb0957660ea074a240deadc))\n\n\n\n"
+235 verbose independent wrote /Users/andres.lucas/Code/adevinta/spark/packages/components/textarea/CHANGELOG.md
+236 silly independent writing new entry: "## [2.0.1](https://github.com/adevinta/spark/compare/@spark-ui/icon-button@1.3.10...@spark-ui/icon-button@2.0.1) (2023-08-03)\n\n\n### Bug Fixes\n\n* **icon-button:** default value changed to main ([1090d56](https://github.com/adevinta/spark/commit/1090d562cee2695edd45ef060ec1f078a2b84f09))\n\n\n### Features\n\n* **icon-button:** get the new colours approach ([50e09d3](https://github.com/adevinta/spark/commit/50e09d34c43461a75e8fb7f6b45aa4d3b9c1daf1))\n\n\n### BREAKING CHANGES\n\n* **icon-button:** using the new colours approach\n\n\n\n"
+237 verbose independent wrote /Users/andres.lucas/Code/adevinta/spark/packages/components/icon-button/CHANGELOG.md
+238 silly lifecycle No script for "preversion" in "@spark-ui/dialog", continuing
+239 silly lifecycle No script for "preversion" in "@spark-ui/popover", continuing
+240 verbose version @spark-ui/dialog has no lockfile. Skipping lockfile update.
+241 verbose version @spark-ui/popover has no lockfile. Skipping lockfile update.
+242 silly lifecycle No script for "version" in "@spark-ui/dialog", continuing
+243 silly independent for @spark-ui/dialog at /Users/andres.lucas/Code/adevinta/spark/packages/components/dialog
+244 silly lifecycle No script for "version" in "@spark-ui/popover", continuing
+245 silly independent for @spark-ui/popover at /Users/andres.lucas/Code/adevinta/spark/packages/components/popover
+246 silly independent writing new entry: "## [2.0.1](https://github.com/adevinta/spark/compare/@spark-ui/tabs@1.2.28...@spark-ui/tabs@2.0.1) (2023-08-03)\n\n\n### Features\n\n* **tabs:** apply new colour strategy ([6354f52](https://github.com/adevinta/spark/commit/6354f52df7734d13c367a0fe96e5b00d1eaca2ce))\n\n\n### BREAKING CHANGES\n\n* **tabs:** apply new colour strategy\n\n\n\n"
+247 verbose independent wrote /Users/andres.lucas/Code/adevinta/spark/packages/components/tabs/CHANGELOG.md
+248 silly independent writing new entry: "## [1.4.2](https://github.com/adevinta/spark/compare/@spark-ui/dialog@1.4.1...@spark-ui/dialog@1.4.2) (2023-08-03)\n\n\n### Features\n\n* **alert-dialog:** dependencies review ([0519681](https://github.com/adevinta/spark/commit/05196812b2226d52be336a6d18b50fda963d0187))\n\n\n\n"
+249 verbose independent wrote /Users/andres.lucas/Code/adevinta/spark/packages/components/dialog/CHANGELOG.md
+250 silly lifecycle No script for "preversion" in "@spark-ui/alert-dialog", continuing
+251 verbose version @spark-ui/alert-dialog has no lockfile. Skipping lockfile update.
+252 silly lifecycle No script for "version" in "@spark-ui/alert-dialog", continuing
+253 silly independent for @spark-ui/alert-dialog at /Users/andres.lucas/Code/adevinta/spark/packages/components/alert-dialog
+254 silly independent writing new entry: "## [1.0.14](https://github.com/adevinta/spark/compare/@spark-ui/popover@1.0.13...@spark-ui/popover@1.0.14) (2023-08-03)\n\n\n### Features\n\n* **popover:** dependencies review ([8243e00](https://github.com/adevinta/spark/commit/8243e002951d4843edab7804f5e80b4412ca9aba))\n\n\n\n"
+255 verbose independent wrote /Users/andres.lucas/Code/adevinta/spark/packages/components/popover/CHANGELOG.md
+256 silly independent writing new entry: "## [0.1.3](https://github.com/adevinta/spark/compare/@spark-ui/alert-dialog@0.1.2...@spark-ui/alert-dialog@0.1.3) (2023-08-03)\n\n**Note:** Version bump only for package @spark-ui/alert-dialog\n\n\n\n"
+257 verbose independent wrote /Users/andres.lucas/Code/adevinta/spark/packages/components/alert-dialog/CHANGELOG.md
+258 verbose version Updating root package-lock.json
+259 error Error: Command failed with exit code 1: npm install --package-lock-only --ignore-scripts
+259 error npm ERR! code ETARGET
+259 error npm ERR! notarget No matching version found for @spark-ui/dialog@1.4.2.
+259 error npm ERR! notarget In most cases you or one of your dependencies are requesting
+259 error npm ERR! notarget a package version that doesn't exist.
+259 error
+259 error npm ERR! A complete log of this run can be found in:
+259 error npm ERR!     /Users/andres.lucas/.npm/_logs/2023-08-03T09_33_01_551Z-debug-0.log
+259 error     at makeError (/Users/andres.lucas/Code/adevinta/spark/node_modules/execa/lib/error.js:60:11)
+259 error     at handlePromise (/Users/andres.lucas/Code/adevinta/spark/node_modules/execa/index.js:118:26)
+259 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+259 error     at async VersionCommand.updatePackageVersions (/Users/andres.lucas/Code/adevinta/spark/node_modules/lerna/dist/index.js:8300:13)
+259 error     at async Promise.all (index 0)

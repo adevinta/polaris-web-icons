@@ -1,0 +1,63 @@
+<script>
+  window.global = window
+</script>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+  /* Enabled dark mode preview in story views */
+  html {
+    background-color: rgb(var(--colors-background));
+    color: rgb(var(--colors-on-background));
+    font-family: var(--font-family-sans) !important;
+  }
+
+  .sbdocs-wrapper {
+    padding: 30px 20px !important;
+  }
+
+  .sbdocs-content {
+    display: grid !important;
+    grid-template-columns: 100% 0;
+    gap: 24px;
+    max-width: 1200px !important;
+    height: 100%;
+  }
+
+  @media (min-width: 1024px) {
+    .sbdocs-content {
+      grid-template-columns: minmax(0, auto) 200px;
+    }
+  }
+
+  #spark-doc-container {
+    width: 100%;
+  }
+
+  .docblock-source {
+    border: 1px solid #ebebed7f !important;
+    box-shadow: none !important;
+    background-color: #ebebed7f !important;
+  }
+
+  .sbdocs-wrapper:has(iframe#tcv) > div {
+    max-width: unset !important;
+    height: auto;
+    grid-template-columns: 100%;
+  }
+
+  #spark-doc-container > h1 {
+    color: #0052ff !important;
+    font-weight: 700 !important;
+  }
+
+  #spark-doc-container > h2,
+  #spark-doc-container > h3,
+  #spark-doc-container > h4,
+  #spark-doc-container > h5 {
+    color: #35376a !important;
+    font-weight: 700 !important;
+  }
+</style>
+
+<link href="/normalize.css" rel="stylesheet" />

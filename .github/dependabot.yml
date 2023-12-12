@@ -1,0 +1,20 @@
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    reviewers:
+      - 'acd02'
+      - 'andresin87'
+      - 'andresz1'
+      - 'kikoruiz'
+      - 'Powerplex'
+      - 'soykje'
+    ignore:
+      - dependency-name: '*'
+        update-types: ['version-update:semver-major']
+      - dependency-name: '@storybook/*'
+      - dependency-name: 'storybook'
+    commit-message:
+      prefix: 'build(npm)'
