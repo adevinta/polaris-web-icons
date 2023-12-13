@@ -2,14 +2,14 @@
 
 ## Setup
 
-The following steps will get you up and running to contribute to Spark:
+The following steps will get you up and running to contribute to Polaris UI:
 
 - Fork the repo
 - Clone your fork locally
 
 ```sh
-git clone https://github.com/<your_github_username>/spark.git
-cd spark
+git clone https://github.com/<your_github_username>/polaris-web-icons.git
+cd polaris-web-icons
 ```
 
 - Setup all the dependencies and packages. This command will install dependencies.
@@ -73,28 +73,28 @@ npm link
 
 ```sh
 cd my-awesome-project
-npm link "@spark-ui/dummy" // Make sure to use quotes around package name
+npm link "@polaris-ui/dummy" // Make sure to use quotes around package name
 ```
 
 Where you're done with your tests you may unlink the package with the following commands:
 
 ```sh
 cd my-awesome-project
-npm unlink --no-save "@spark-ui/dummy"
-npm uninstall --global "@spark-ui/dummy"
+npm unlink --no-save "@polaris-ui/dummy"
+npm uninstall --global "@polaris-ui/dummy"
 ```
 
 ### Commiting changes
 
-All commits should follow the [commit strategy](https://sparkui.vercel.app/?path=/docs/contributing-commit--docs)
+All commits should follow the [commit strategy](https://polaris-web-icons.vercel.app/?path=/docs/contributing-commit--docs)
 
 ### Tests
 
-All commits that fix bugs or add features need a test that should follow the [testing strategy](https://sparkui.vercel.app/?path=/docs/contributing-testing--docs)
+All commits that fix bugs or add features need a test that should follow the [testing strategy](https://polaris-web-icons.vercel.app/?path=/docs/contributing-testing--docs)
 
 ## Creating a Pull Request
 
-Since Spark is a community project pull requests are more than welcome. However, before working on a large change, it is best to open an issue first to discuss it with the maintainers.
+Since Polaris UI is a community project pull requests are more than welcome. However, before working on a large change, it is best to open an issue first to discuss it with the maintainers.
 
 When in doubt try to keep your Pull Request as small as possible. To give a Pull Request the best chance of getting accepted, don't add more than one feature or bug fix per Pull Request. It's often best to create two smaller Pull Requests than one big one.
 
