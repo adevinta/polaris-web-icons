@@ -3,7 +3,12 @@ const themeUtils = require('@spark-ui/theme-utils')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./.storybook/**/*.{js,ts,jsx,tsx}', './packages/**/*.{js,ts,jsx,tsx}', './documentation/**/*.{js,ts,jsx,tsx,mdx}'],
+  content: [
+    './.storybook/**/*.{js,ts,jsx,tsx}',
+    './packages/**/*.{js,ts,jsx,tsx}',
+    './documentation/**/*.{js,ts,jsx,tsx,mdx}',
+    './node_modules/@spark-ui/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
   plugins: [
     ...sparkPlugins.sparkConfig({
       themes: {
