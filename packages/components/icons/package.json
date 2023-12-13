@@ -1,7 +1,7 @@
 {
   "name": "@polaris/icons",
   "version": "1.21.4",
-  "description": "spark-ui icons",
+  "description": "polaris icons",
   "publishConfig": {
     "access": "public"
   },
@@ -38,7 +38,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adevinta/spark.git",
+    "url": "https://github.com/adevinta/polaris-web-icons.git",
     "directory": "packages/components/icons"
   },
   "config": {
@@ -46,8 +46,8 @@
     "category": "components"
   },
   "bugs": {
-    "url": "https://github.com/adevinta/spark/issues?q=is%3Aopen+label%3Acomponent+label%3Aicons"
+    "url": "https://github.com/adevinta/polaris-web-icons/issues?q=is%3Aopen+label%3Acomponent+label%3Aicons"
   },
-  "homepage": "https://sparkui.vercel.app",
+  "homepage": "https://polaris-web-icons.vercel.app",
   "license": "MIT"
 }
