@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.23.0 (2023-12-13)
+
+### Bug Fixes
+
+- **icons:** package-name ([514af04](https://github.com/adevinta/polaris-web-icons/commit/514af04dd4059601819e712ce02c4b4a12acd480))
+
+### Features
+
+- **icons:** change package name ([8488c81](https://github.com/adevinta/polaris-web-icons/commit/8488c81cdc24119a109ff13805de1133e4bb32f2))
+
 # [1.22.0](https://github.com/adevinta/polaris-web-icons/compare/@polaris/icons@1.21.5...@polaris/icons@1.22.0) (2023-12-13)
 
 ### Features
