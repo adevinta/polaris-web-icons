@@ -29,7 +29,7 @@ jobs:
       - name: Publish
         run: npm run release
   deploy:
-    needs: [contributors, maintainers, release]
+    needs: [release]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
