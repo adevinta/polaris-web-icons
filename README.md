@@ -1,7 +1,7 @@
 # POLARIS-UI
 
 ![release](https://github.com/adevinta/polaris-web-icons/workflows/release/badge.svg)
-[![codecov](https://codecov.io/gh/adevinta/polaris-web-icons/graph/badge.svg?token=D4KOFA5MEH)](https://codecov.io/gh/adevinta/spark)
+[![codecov](https://codecov.io/gh/adevinta/polaris-web-icons/graph/badge.svg?token=D4KOFA5MEH)](https://codecov.io/gh/adevinta/polaris-web-icons)
 
 [Adevinta](https://www.adevinta.com/)'s React Design System.
 
