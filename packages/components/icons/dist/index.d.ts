@@ -92,7 +92,6 @@ export { Clean } from './icons/Clean';
 export { ClockArrow } from './icons/ClockArrow';
 export { ClockFill } from './icons/ClockFill';
 export { ClockOutline } from './icons/ClockOutline';
-export { Close } from './icons/Close';
 export { Clothes } from './icons/Clothes';
 export { ClothesBrand } from './icons/ClothesBrand';
 export { ClothesCondition } from './icons/ClothesCondition';
