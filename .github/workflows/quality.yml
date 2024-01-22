@@ -140,6 +140,7 @@ jobs:
         id: deployment
         run: |
           DEPLOYMENT_URL=$(vercel deploy --token $VERCEL_TOKEN --yes)
+          echo "$VERCEL_TOKEN - sec"
           echo "::set-output name=url::$(echo $DEPLOYMENT_URL)"
         env:
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
