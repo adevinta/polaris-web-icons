@@ -70,7 +70,7 @@ jobs:
           fetch-depth: 0
 
       - name: Get changed files
-        uses: tj-actions/changed-files@v41
+        uses: tj-actions/changed-files@v36
         id: files
         with:
           files: ./packages/components/**/*.{ts,tsx,mdx,json}
@@ -138,7 +138,10 @@ jobs:
 
       - name: Deploy Storybook to Vercel
         id: deployment
-        run: vercel deploy --token $VERCEL_TOKEN --yes
+        run: |
+          DEPLOYMENT_URL=$(vercel deploy --token $VERCEL_TOKEN --yes)
+          echo "$VERCEL_TOKEN - sec"
+          echo "::set-output name=url::$(echo $DEPLOYMENT_URL)"
         env:
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
