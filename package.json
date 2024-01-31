@@ -22,7 +22,7 @@
     "test:coverage:open": "npx open-cli ./dist/coverage/index.html",
     "typecheck": "tsc --noEmit",
     "commit": "git-cz",
-    "lint": "eslint --config .eslintrc.cjs packages/**/*.{ts,tsx,js,mjs} documentation/**/*.{ts,tsx} --cache",
+    "lint": "eslint --config .eslint555dcxsssc.cjs \"packages/**/*.{ts,tsx,js,mjs}\" \"documentation/**/*.{ts,tsx}\" --cache",
     "lint:staged": "lint-staged --config .lintstagedrc.json",
     "prettier": "prettier --config .prettierrc.cjs --write \"{packages,documentation,src}/**/*.{ts,tsx,js}\"",
     "prettify": "npm run lint && npm run prettier",
