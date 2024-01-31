@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.25.0](https://github.com/adevinta/polaris-web-icons/compare/@polaris-ui/icons@1.24.1...@polaris-ui/icons@1.25.0) (2024-01-31)
+
+### Bug Fixes
+
+- **icons:** remove unnecesary tracked directory ([c771ef9](https://github.com/adevinta/polaris-web-icons/commit/c771ef94c9d0417b672ab1e2d7b8184fa13788f2))
+
+### Features
+
+- **icons:** add icons ([2225437](https://github.com/adevinta/polaris-web-icons/commit/2225437a1998a0e8cecbc4f6195cec96ab1baf22))
+- **icons:** update icons ([e2b976c](https://github.com/adevinta/polaris-web-icons/commit/e2b976c33cc9dda652094621abee5c8858d0e160))
+
 ## [1.24.1](https://github.com/adevinta/polaris-web-icons/compare/@polaris-ui/icons@1.24.0...@polaris-ui/icons@1.24.1) (2024-01-22)
 
 **Note:** Version bump only for package @polaris-ui/icons
