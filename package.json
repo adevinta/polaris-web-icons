@@ -105,7 +105,7 @@
     "eslint-plugin-tailwindcss": "3.13.0",
     "eslint-plugin-testing-library": "5.11.1",
     "husky": "8.0.3",
-    "jsdom": "21.1.1",
+    "jsdom": "21.1.2",
     "lerna": "^7.1.1",
     "lint-staged": "13.3.0",
     "nx": "^16.5.0",
