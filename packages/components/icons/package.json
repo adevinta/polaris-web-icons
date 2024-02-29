@@ -1,6 +1,6 @@
 {
   "name": "@polaris-ui/icons",
-  "version": "1.25.0",
+  "version": "1.25.1",
   "description": "polaris icons",
   "publishConfig": {
     "access": "public"
