@@ -9,7 +9,6 @@ export const Redo = React.forwardRef(
   ) => (
     <svg
       ref={ref}
-      xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       data-title="Redo"
       {...{ ...(title && { 'data-title': title }), fill, stroke, ...props }}

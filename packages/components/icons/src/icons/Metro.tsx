@@ -10,7 +10,6 @@ export const Metro = React.forwardRef(
     <svg
       ref={ref}
       viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
       data-title="Metro"
       {...{ ...(title && { 'data-title': title }), fill, stroke, ...props }}
       dangerouslySetInnerHTML={{
