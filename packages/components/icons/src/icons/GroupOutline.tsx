@@ -10,7 +10,6 @@ export const GroupOutline = React.forwardRef(
     <svg
       ref={ref}
       viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
       data-title="GroupOutline"
       {...{ ...(title && { 'data-title': title }), fill, stroke, ...props }}
       dangerouslySetInnerHTML={{
