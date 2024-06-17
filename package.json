@@ -121,7 +121,7 @@
     "scroll-into-view-if-needed": "^3.0.10",
     "storybook": "7.5.3",
     "tailwindcss": "3.4.1",
-    "tailwindcss-radix": "2.8.0",
+    "tailwindcss-radix": "2.9.0",
     "ts-node": "10.9.2",
     "type-fest": "3.13.1",
     "typescript": "5.4",
