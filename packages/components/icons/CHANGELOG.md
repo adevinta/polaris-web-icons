@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.25.11](https://github.com/adevinta/polaris-web-icons/compare/@polaris-ui/icons@1.25.10...@polaris-ui/icons@1.25.11) (2024-09-18)
+
+**Note:** Version bump only for package @polaris-ui/icons
+
 ## [1.25.10](https://github.com/adevinta/polaris-web-icons/compare/@polaris-ui/icons@1.25.9...@polaris-ui/icons@1.25.10) (2024-09-05)
 
 **Note:** Version bump only for package @polaris-ui/icons
