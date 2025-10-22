@@ -2,7 +2,7 @@ import React, { type Ref } from 'react'
 
 import { IconProps } from '../Types'
 
-export const Userfill = React.forwardRef(
+export const UserFill = React.forwardRef(
   (
     { title, fill = 'currentColor', stroke = 'none', ...props }: IconProps,
     ref: Ref<SVGSVGElement>
@@ -10,7 +10,7 @@ export const Userfill = React.forwardRef(
     <svg
       ref={ref}
       viewBox="0 0 24 24"
-      data-title="Userfill"
+      data-title="UserFill"
       {...{ ...(title && { 'data-title': title }), fill, stroke, ...props }}
       dangerouslySetInnerHTML={{
         __html:
@@ -21,6 +21,6 @@ export const Userfill = React.forwardRef(
   )
 )
 
-Userfill.displayName = 'Userfill'
+UserFill.displayName = 'UserFill'
 
-export const tags = ['Userfill', '']
+export const tags = ['UserFill', '']
