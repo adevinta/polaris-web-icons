@@ -1,0 +1,26 @@
+import React, { type Ref } from 'react'
+
+import { IconProps } from '../Types'
+
+export const ThreeDotsHorizontal = React.forwardRef(
+  (
+    { title, fill = 'currentColor', stroke = 'none', ...props }: IconProps,
+    ref: Ref<SVGSVGElement>
+  ) => (
+    <svg
+      ref={ref}
+      viewBox="0 0 24 24"
+      data-title="ThreeDotsHorizontal"
+      {...{ ...(title && { 'data-title': title }), fill, stroke, ...props }}
+      dangerouslySetInnerHTML={{
+        __html:
+          (title === undefined ? '' : `<title>${title}</title>`) +
+          '<path d="M19.6923 14.5C20.9668 14.5 22 13.4926 22 12.25 22 11.0074 20.9668 10 19.6923 10 18.4178 10 17.3847 11.0074 17.3847 12.25 17.3847 13.4926 18.4178 14.5 19.6923 14.5ZM11.9998 14.5C13.2743 14.5 14.3075 13.4926 14.3075 12.25 14.3075 11.0074 13.2743 10 11.9998 10 10.7253 10 9.69211 11.0074 9.69211 12.25 9.69211 13.4926 10.7253 14.5 11.9998 14.5ZM4.30767 14.5C5.58216 14.5 6.61534 13.4926 6.61534 12.25 6.61534 11.0074 5.58216 10 4.30767 10 3.03318 10 2 11.0074 2 12.25 2 13.4926 3.03318 14.5 4.30767 14.5Z"/>',
+      }}
+    />
+  )
+)
+
+ThreeDotsHorizontal.displayName = 'ThreeDotsHorizontal'
+
+export const tags = ['ThreeDotsHorizontal', '']

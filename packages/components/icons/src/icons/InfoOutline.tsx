@@ -1,0 +1,26 @@
+import React, { type Ref } from 'react'
+
+import { IconProps } from '../Types'
+
+export const InfoOutline = React.forwardRef(
+  (
+    { title, fill = 'currentColor', stroke = 'none', ...props }: IconProps,
+    ref: Ref<SVGSVGElement>
+  ) => (
+    <svg
+      ref={ref}
+      viewBox="0 0 24 24"
+      data-title="InfoOutline"
+      {...{ ...(title && { 'data-title': title }), fill, stroke, ...props }}
+      dangerouslySetInnerHTML={{
+        __html:
+          (title === undefined ? '' : `<title>${title}</title>`) +
+          '<path d="M11.9999 16.8209C12.5673 16.8209 13.0267 16.3609 13.0267 15.7943L13.0267 11.1539C13.0267 10.5872 12.5673 10.1273 11.9999 10.1273 11.4324 10.1273 10.973 10.5872 10.973 11.1539L10.973 15.7943C10.973 16.361 11.4324 16.8209 11.9999 16.8209ZM11.9999 9.15955C12.7809 9.15955 13.4135 8.52649 13.4135 7.74627 13.4135 6.96605 12.7809 6.333 11.9999 6.333 11.2189 6.333 10.5864 6.96605 10.5864 7.74627 10.5864 8.52649 11.2189 9.15955 11.9999 9.15955Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47684 2 2 6.47746 2 12C2 17.5225 6.47684 22 12 22C17.5232 22 22 17.5225 22 12C22 6.47746 17.5232 2 12 2ZM4.11228 12C4.11228 7.6431 7.64404 4.11169 12 4.11169C16.356 4.11169 19.8877 7.6431 19.8877 12C19.8877 16.3569 16.356 19.8883 12 19.8883C7.64404 19.8883 4.11228 16.3569 4.11228 12Z"/>',
+      }}
+    />
+  )
+)
+
+InfoOutline.displayName = 'InfoOutline'
+
+export const tags = ['InfoOutline', '']

@@ -1,0 +1,26 @@
+import React, { type Ref } from 'react'
+
+import { IconProps } from '../Types'
+
+export const BoxFill = React.forwardRef(
+  (
+    { title, fill = 'currentColor', stroke = 'none', ...props }: IconProps,
+    ref: Ref<SVGSVGElement>
+  ) => (
+    <svg
+      ref={ref}
+      viewBox="0 0 24 24"
+      data-title="BoxFill"
+      {...{ ...(title && { 'data-title': title }), fill, stroke, ...props }}
+      dangerouslySetInnerHTML={{
+        __html:
+          (title === undefined ? '' : `<title>${title}</title>`) +
+          '<path d="M2 9.69499V19.5686C2 20.2135 2.24295 20.78 2.72885 21.268 3.12798 21.6688 3.77874 22 4.42082 22H19.5792C20.2213 22 20.7852 21.756 21.2712 21.268 21.6703 20.8671 22 20.2135 22 19.5686V9.69499H2ZM14.0087 16.5795H17.4707C18.0347 16.5795 18.4338 16.9804 18.4338 17.5468 18.4338 18.1133 18.0347 18.5142 17.4707 18.5142H14.0087C13.4447 18.5142 13.0456 18.1133 13.0456 17.5468 13.0456 16.9804 13.4447 16.5795 14.0087 16.5795ZM10.9458 2H7.39696C6.75488 2.07843 6.02603 2.24401 5.46204 2.64488 4.89805 2.96732 4.49892 3.45534 4.1692 4.10022L2.39046 7.46405H10.9458V2ZM19.7354 4.10893C19.4143 3.46405 18.9284 2.97603 18.3644 2.56645 17.8004 2.16558 17.0716 2 16.4295 2H12.8807V7.46405H21.4447L19.7354 4.10022V4.10893Z"/>',
+      }}
+    />
+  )
+)
+
+BoxFill.displayName = 'BoxFill'
+
+export const tags = ['BoxFill', '']

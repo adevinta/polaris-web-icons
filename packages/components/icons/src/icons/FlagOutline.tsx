@@ -1,0 +1,26 @@
+import React, { type Ref } from 'react'
+
+import { IconProps } from '../Types'
+
+export const FlagOutline = React.forwardRef(
+  (
+    { title, fill = 'currentColor', stroke = 'none', ...props }: IconProps,
+    ref: Ref<SVGSVGElement>
+  ) => (
+    <svg
+      ref={ref}
+      viewBox="0 0 24 24"
+      data-title="FlagOutline"
+      {...{ ...(title && { 'data-title': title }), fill, stroke, ...props }}
+      dangerouslySetInnerHTML={{
+        __html:
+          (title === undefined ? '' : `<title>${title}</title>`) +
+          '<path fill-rule="evenodd" clip-rule="evenodd" d="M5.97961 1.99976H18.187C18.5696 1.99976 18.9172 2.2271 19.077 2.5819C19.2369 2.9367 19.1798 3.35403 18.9308 3.65055L15.4081 7.84591L18.9308 12.0413C19.1798 12.3378 19.2369 12.7551 19.077 13.1099C18.9172 13.4647 18.5696 13.6921 18.187 13.6921H6.95922V20.9998C6.95922 21.552 6.52063 21.9998 5.97961 21.9998C5.43859 21.9998 5 21.552 5 20.9998V2.99976C5 2.44747 5.43859 1.99976 5.97961 1.99976ZM6.95922 11.6921H16.0572L13.3741 8.4967C13.0597 8.12221 13.0597 7.56961 13.3741 7.19512L16.0572 3.99976H6.95922V11.6921Z"/>',
+      }}
+    />
+  )
+)
+
+FlagOutline.displayName = 'FlagOutline'
+
+export const tags = ['FlagOutline', '']
