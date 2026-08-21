@@ -1,0 +1,26 @@
+import React, { type Ref } from 'react'
+
+import { IconProps } from '../Types'
+
+export const ChevronVerticalLeft = React.forwardRef(
+  (
+    { title, fill = 'currentColor', stroke = 'none', ...props }: IconProps,
+    ref: Ref<SVGSVGElement>
+  ) => (
+    <svg
+      ref={ref}
+      viewBox="0 0 24 24"
+      data-title="ChevronVerticalLeft"
+      {...{ ...(title && { 'data-title': title }), fill, stroke, ...props }}
+      dangerouslySetInnerHTML={{
+        __html:
+          (title === undefined ? '' : `<title>${title}</title>`) +
+          '<path fill-rule="evenodd" clip-rule="evenodd" d="M16.7037 2.27861C17.0876 2.66109 17.1001 3.29412 16.7315 3.69253L9.04545 12L16.7315 20.3075C17.1001 20.7059 17.0876 21.3389 16.7037 21.7214C16.3197 22.1039 15.7096 22.0909 15.341 21.6925L7.47077 13.186C7.32159 13.031 7.20447 12.8477 7.1244 12.6478C7.04199 12.442 7 12.2217 7 12C7 11.7783 7.04199 11.558 7.1244 11.3522C7.20447 11.1523 7.32159 10.969 7.47077 10.814L15.341 2.30747C15.7096 1.90906 16.3197 1.89614 16.7037 2.27861Z"/>',
+      }}
+    />
+  )
+)
+
+ChevronVerticalLeft.displayName = 'ChevronVerticalLeft'
+
+export const tags = ['ChevronVerticalLeft', '']
